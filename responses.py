@@ -15,8 +15,7 @@ dad_jokes = [
 
 positives = [
     "thank", "thanks", "love", "appreciate", "awesome", "great", "nice",
-    "good", "happy", "joy", "joyful", "joyous", "joyfully", "joyously",
-    "joyed", "joyfully", "joyously", "joyed", "joyfully", "joyously", "<3"
+    "good", "happy", "<3"
 ]
 negatives = [
     "screw",
