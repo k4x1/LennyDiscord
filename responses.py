@@ -26,16 +26,6 @@ negatives = [
     "shit",
     "damn",
     "shit",
-    "damn",
-    "fuck",
-    "fucking",
-    "fucked",
-    "fucking",
-    "fucked",
-    "fucking",
-    "fucked",
-    "fucking",
-    "fucked",
 ]
 
 nice_responses = [
