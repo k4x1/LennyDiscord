@@ -1,6 +1,23 @@
-from random import choice, randint
+from random import choice
 
-import re
+
+#this stuff is all hard coded for now
+cosmetics = {
+    "HardHat": "A sturdy hard hat",
+    "WizzardHat": "A magical wizard hat",
+    "PropellorHat": "A hat with a propeller",
+    "TricornHat": "A three-cornered hat",
+    "DetectiveHat": "A detective's hat",
+    "Cigarette": "A cigarette accessory"
+}
+
+def get_cosmetic_keys_help() -> str:
+    return "\n".join(f"`{k}`: {v}" for k, v in cosmetics.items())
+
+def is_valid_cosmetic_key(key: str) -> bool:
+    return key in cosmetics
+
+#everything below here is just silly stuff
 
 dad_jokes = [
     "I'm afraid for the calendar. Its days are numbered.",
@@ -13,9 +30,11 @@ dad_jokes = [
     "I'm reading a book on anti-gravity. It's impossible to put down."
 ]
 
+# vscode copilot is kinda amazing at just geneerating these
 positives = [
     "thank", "thanks", "love", "appreciate", "awesome", "great", "nice",
-    "good", "happy", "<3"
+    "good", "happy", "<3", "heart", "kind", "cool", "best", "amazing", "fantastic", "wonderful",
+    "excellent", "brilliant", "super", "fantabulous", "rad", "radical", "dope", "lit", "sick", "sweet", "neat", "fabulous", "magnificent", "terrific"  
 ]
 negatives = [
     "screw",
@@ -24,9 +43,7 @@ negatives = [
     "hate",
     "shit",
     "damn",
-    "shit",
 ]
-
 nice_responses = [
     "Aw, thanks!",
     "You're too kind! Lenny appreciates you.",
@@ -48,3 +65,4 @@ def get_response(user_input: str) -> str:
         if any(n in text for n in negatives):
             return ":("
         return "Hello"
+
